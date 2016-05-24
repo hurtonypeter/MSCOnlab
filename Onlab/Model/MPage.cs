@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Onlab.Model
 {
-    public class MPage
+    public class MPage : IMElement
     {
         public List<MElement> Elements { get; set; }
 

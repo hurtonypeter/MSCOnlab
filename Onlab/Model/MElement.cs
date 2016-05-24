@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Onlab.Model
 {
-    public class MElement
+    public abstract class MElement : IMElement
     {
     }
 }

@@ -6,12 +6,18 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\MElement.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Onlab.Model.MForm" Collapsed="true">
     <Position X="5.25" Y="6.25" Width="1.5" />
     <Compartments>
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
+    <AssociationLine Name="Elements" Type="Onlab.Model.MFormElement">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.9" Y="0.466" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Model\MForm.cs</FileName>
@@ -23,7 +29,7 @@
   <Class Name="Onlab.Model.MFormButton" Collapsed="true">
     <Position X="5.25" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAEAAAA=</HashCode>
       <FileName>Model\MFormButton.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -33,6 +39,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\MFormElement.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Onlab.Model.MFormText" Collapsed="true">
     <Position X="3" Y="8.75" Width="1.5" />
@@ -57,6 +64,11 @@
   </Class>
   <Class Name="Onlab.Model.MPage" Collapsed="true">
     <Position X="4.25" Y="3.5" Width="1.5" />
+    <AssociationLine Name="Elements" Type="Onlab.Model.MElement">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.9" Y="0.56" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\MPage.cs</FileName>
@@ -64,6 +76,14 @@
     <ShowAsCollectionAssociation>
       <Property Name="Elements" />
     </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
   </Class>
+  <Interface Name="Onlab.Model.IMElement" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\IMElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

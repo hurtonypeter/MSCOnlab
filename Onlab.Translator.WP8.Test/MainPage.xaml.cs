@@ -1,7 +1,4 @@
-﻿using Onlab.Model;
-using Onlab.Translator.WP8;
-using Onlab.Translator.WP8.Translators;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -18,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
-namespace Onlab.Mobile
+namespace Onlab.Translator.WP8.Test
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -30,28 +27,6 @@ namespace Onlab.Mobile
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
-            var form = new MForm
-            {
-                TargetUri = "/Contacts/Create",
-                Elements = new List<MFormElement>
-                {
-                    new MFormTextBox { Id = "valamid", Text = "valami szöveg" }
-                }
-            };
-            form.Elements.Add(new MFormButton(form, MButtonType.Submit) { Text = "Mentés" });
-            var page = new MPage
-            {
-                Elements = new List<MElement>
-                {
-                    form
-                }
-            };
-
-            var pagetranslator = new PageTranslator();
-
-            this.mainGrid.Children.Add(pagetranslator.Render(page));
-
         }
 
         /// <summary>

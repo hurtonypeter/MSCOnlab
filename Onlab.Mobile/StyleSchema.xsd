@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="http://onlab.hu/"
+    elementFormDefault="qualified"
+    xmlns="http://onlab.hu/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:attributeGroup name="StyleAttributes">
+    <xs:attribute name="selector" type="StyleableElements" use="required" />
+    <xs:attribute name="value" type="xs:string" use="required" />
+  </xs:attributeGroup>
+  
+  <xs:attributeGroup name="ClassIdAttributes">
+    <xs:attribute name="selector" type="xs:string" use="required" />
+    <xs:attribute name="value" type="xs:string" use="required" />
+  </xs:attributeGroup>
+
+  <xs:simpleType name="StyleableElements">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Button" />
+      <xs:enumeration value="TextBox" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:element name="StyleSchema">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="Styles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Style">
+                <xs:complexType>
+                  <xs:attributeGroup ref="StyleAttributes" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+      <xs:element name="Classes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Class">
+                <xs:complexType>
+                  <xs:attributeGroup ref="ClassIdAttributes" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+      <xs:element name="Ids">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id">
+                <xs:complexType>
+                  <xs:attributeGroup ref="ClassIdAttributes" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

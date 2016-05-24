@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Onlab.Model
 {
-    public class MFormElement : IMElement
+    public interface IMElement
     {
     }
 }

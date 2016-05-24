@@ -11,16 +11,13 @@ namespace Onlab.Model
 
         public string Text { get; set; }
 
-        public MForm Form { get; set; }
+        public MForm Form { get; private set; }
 
-        public MFormButton(MForm form)
+        public MButtonType Type { get; private set; }
+
+        public MFormButton(MForm form, MButtonType type)
         {
             Form = form;
         }
-    }
-
-    public enum MFormButtonType
-    {
-        Submit
     }
 }

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StyleSchema xmlns="http://www.onlab.hu"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.onlab.hu StyleSchema.xsd">
+  <Styles>
+    <Style selector="Button" value="font-style: arial" />
+    <Style selector="TextBox" value="font-style: comic sans" />
+  </Styles>
+  <Classes>
+    <Class selector="pirosGomb" value="background-color: #ff0000" />
+  </Classes>
+</StyleSchema>

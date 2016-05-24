@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlab.Web", "Onlab.Web\Onlab.Web.csproj", "{6D4421AC-D716-4857-BCB7-F64B2981073F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlab.Mobile", "Onlab.Mobile\Onlab.Mobile.csproj", "{688791E4-B374-4D70-8311-EC211339B54E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlab", "Onlab\Onlab.csproj", "{6CEDDD3C-CA8D-46AD-92E9-786180FC0243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlab.Translator.WP8", "Onlab.Translator.WP8\Onlab.Translator.WP8.csproj", "{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,18 @@ Global
 		{6CEDDD3C-CA8D-46AD-92E9-786180FC0243}.Release|ARM.Build.0 = Release|Any CPU
 		{6CEDDD3C-CA8D-46AD-92E9-786180FC0243}.Release|x86.ActiveCfg = Release|Any CPU
 		{6CEDDD3C-CA8D-46AD-92E9-786180FC0243}.Release|x86.Build.0 = Release|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Debug|x86.Build.0 = Debug|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Release|ARM.Build.0 = Release|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Release|x86.ActiveCfg = Release|Any CPU
+		{6D1D6E45-A6B6-43C8-8BAE-30F8CD047365}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
